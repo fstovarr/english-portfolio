@@ -78,10 +78,10 @@ Player.prototype = {
         src: [
           "https://github.com/fstovarr/english-portfolio/blob/master/files/audio/" +
             data.file +
-            ".webm",
+            ".webm?raw=true",
           "https://github.com/fstovarr/english-portfolio/blob/master/files/audio/" +
             data.file +
-            ".mp3",
+            ".mp3?raw=true",
         ],
         html5: true, // Force to HTML5 so that the audio can stream in (best for large files).
         onplay: function () {
