@@ -76,8 +76,12 @@ Player.prototype = {
     } else {
       sound = data.howl = new Howl({
         src: [
-          "../files/audio/" + data.file + ".webm",
-          "../files/audio/" + data.file + ".mp3",
+          "https://github.com/fstovarr/english-portfolio/blob/master/files/audio/" +
+            data.file +
+            ".webm",
+          "https://github.com/fstovarr/english-portfolio/blob/master/files/audio/" +
+            data.file +
+            ".mp3",
         ],
         html5: true, // Force to HTML5 so that the audio can stream in (best for large files).
         onplay: function () {
